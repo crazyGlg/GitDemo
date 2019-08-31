@@ -3,3 +3,4 @@
 Settings->Startup->Environment 添加
 set LANG=zh_CN.UTF-8
 set LC_ALL=zh_CN.utf8
+高乐刚
