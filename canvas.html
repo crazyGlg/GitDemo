@@ -1,0 +1,45 @@
+<!doctype html><!--声明文档类型-->
+<html><!--根标签-->
+    <head><!--不可视化区域-->
+        <meta charset="uft-8"><!--元信息（设置字符编码）： charst 字符集；utf-8:国际编码：解决乱码-->
+        <meta name="Keywords" content="关键字（可以多个）"><!--网页关键字-->
+        <meta name="description" content="描述网页"><!--描述网页是什么网页-->
+        <title>canvas</title><!--设置网页标题-->
+        <style>
+            body,p,ul,ol,li,span{
+                margin: 0;
+                padding: 0;
+            }
+            ul,ol{ 
+                list-style:none;
+            }
+            a{
+                text-decoration:none;
+            }
+            canvas{
+
+                display: block;
+                width: 500px;
+                height: 500px;
+                margin: 100px auto 0;
+                background-color:  rgb(41, 151, 65);
+            }
+        </style>
+    </head>
+    <body><!--可视化区域-->
+        
+        <canvas width="500" height="500">如果浏览器版本过低，此处文字会显示出来</canvas>
+        <script>
+
+            let canvas = document.querySelector("canvas");
+            let canCon = canvas.getContext("2d");//获取渲染上下文和它的绘画功能
+            // canCon.fillStyle = "red"//拿起一支笔，并粘上有颜色的墨
+            // //圆
+            // // canCon.arc(250,250,250,0,Math.PI*2);//圆心的x,y,r,绘制方法
+            // // canCon.fill();//下笔作画
+            // canCon.fillRect(200,200,100,100);
+
+            canCon.fillStyle = "black";
+        </script>
+    </body>
+</html>
